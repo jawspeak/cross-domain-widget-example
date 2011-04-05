@@ -1,0 +1,4 @@
+Self contained example of how to create a js widget.
+
+- Uses best practices.
+- Self contained in that starting up several web servers (included) to serve it shows how requests can be made cross-domain with jsonp.
