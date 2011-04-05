@@ -1,6 +1,7 @@
 Self contained example of how to create a js widget.
 =====================================================
 - Self contained in that starting up several web servers (included) to serve it shows how requests can be made cross-domain with jsonp.
+- Note, it is cross domain because the local servers all operate on different ports, which c onstitutes for cross domain requests: http://en.wikipedia.org/wiki/Cross-Origin_Resource_Sharing
 
 
 How to use:
