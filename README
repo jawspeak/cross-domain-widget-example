@@ -1,4 +1,14 @@
 Self contained example of how to create a js widget.
-
-- Uses best practices.
+=====================================================
 - Self contained in that starting up several web servers (included) to serve it shows how requests can be made cross-domain with jsonp.
+
+
+How to use:
+============
+1) Run ./start_webservers.sh
+2) Browse to http://localhost:3333/example.html
+3) You will see a jsonp request come back
+
+Thanks:
+============
+Twitter's widget, which was retrieved from http://twitter.com/about/resources/widgets/widget_profile, linking to this js file: http://widgets.twimg.com/j/2/widget.js (This file is minified, but very helpful to understand).
