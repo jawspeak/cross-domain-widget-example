@@ -17,6 +17,17 @@ def runserver(port, docroot)
   s = TCPServer.new(port)
   loop { 
     _ = s.accept
+
+# TODO would be nice to see request http://stackoverflow.com/questions/1360904/reading-from-tcpsocket-is-slow-in-ruby-rails
+# hanging with writing request some reason
+    # request = ""
+    # while (line =_.recv(1024))
+    #   request += line
+    #   puts ">>#{request[-2..-1]}<<"
+    #   break if request[-2..-1] == "\r\n"
+    # end
+    # puts request
+
     _ << "HTTP/1.0 200 OK\r\n\r\n#{readoutput(_, docroot)}"
     _.close
   }
